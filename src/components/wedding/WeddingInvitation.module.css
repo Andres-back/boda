@@ -121,7 +121,7 @@
 .musicIcon { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: var(--blush); color: var(--cocoa); }
 .musicControlPlaying .musicIcon { animation: musicPulse 1.8s ease-in-out infinite; }
 @keyframes musicPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(239, 185, 197, 0.42); } 50% { box-shadow: 0 0 0 7px rgba(239, 185, 197, 0); } }
-.entranceDate { position: relative; z-index: 1; margin: 22px 0 0; color: var(--muted); font-size: 8px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
+.entranceDate { position: relative; z-index: 1; margin: 22px 0 0; color: var(--muted); font-size: clamp(12px, 1.4vw, 15px); font-weight: 700; line-height: 1.5; letter-spacing: 0.14em; text-transform: uppercase; }
 
 .nav {
   position: fixed;
@@ -222,7 +222,7 @@
 .heroNames { margin: 0; font: 300 clamp(62px, 10vw, 122px)/0.72 var(--serif); letter-spacing: -0.065em; text-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); }
 .heroNames small { display: block; margin-top: 0.25em; color: rgba(255, 255, 255, 0.8); font: 600 0.11em/1 var(--sans); letter-spacing: 0.42em; text-transform: uppercase; }
 .heroNames i { display: block; margin: 0.2em 0 0.12em; color: var(--gold-pale); font: 400 clamp(38px, 6vw, 66px)/0.65 var(--script); }
-.heroDate { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 40px 0 15px; font-size: 11px; font-weight: 600; letter-spacing: 0.23em; text-transform: uppercase; }
+.heroDate { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 38px 0 17px; font-size: clamp(15px, 1.45vw, 19px); font-weight: 700; line-height: 1.45; letter-spacing: 0.14em; text-transform: uppercase; }
 .heroDate::before, .heroDate::after { content: ""; width: clamp(28px, 6vw, 70px); height: 1px; background: rgba(255, 255, 255, 0.65); }
 .heroQuote { margin: 0 auto 26px; font: italic 300 18px/1.5 var(--serif); }
 .heroQuote strong { display: inline; font-weight: 500; }
@@ -251,7 +251,7 @@
 .countdown > div:last-child { border-right: 0; }
 .countdown strong { font: 300 clamp(49px, 7vw, 82px)/1 var(--serif); color: #9b6070; }
 .countdown span { margin-top: 10px; font-size: 8px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; }
-.calendarLine { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 9px; margin-top: 28px; color: rgba(64, 82, 71, 0.76); font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
+.calendarLine { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 30px; color: rgba(64, 82, 71, 0.82); font-size: clamp(13px, 1.3vw, 16px); font-weight: 700; line-height: 1.5; letter-spacing: 0.12em; text-transform: uppercase; }
 
 .schedule { position: relative; padding: 125px 0 135px; background: var(--ivory); }
 .scheduleGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
@@ -401,7 +401,7 @@
   .heroContent { padding: 110px 0 120px; }
   .heroNames { font-size: clamp(62px, 20vw, 92px); }
   .heroKicker { max-width: 290px; margin-inline: auto; line-height: 1.8; }
-  .heroDate { margin-top: 34px; font-size: 9px; gap: 10px; }
+  .heroDate { margin-top: 32px; font-size: 14px; gap: 10px; letter-spacing: 0.1em; }
   .heroQuote { max-width: 310px; font-size: 17px; }
   .heroGarland { bottom: -3%; width: 165vw; max-width: none; }
   .promise { min-height: 83svh; }
@@ -413,7 +413,7 @@
   .countdown > div:nth-child(2) { border-right: 0; }
   .countdown > div:nth-child(3), .countdown > div:nth-child(4) { border-bottom: 0; }
   .countdown strong { font-size: 52px; }
-  .calendarLine { line-height: 1.6; text-align: center; }
+  .calendarLine { font-size: 13px; line-height: 1.6; letter-spacing: 0.08em; text-align: center; }
   .schedule { padding: 92px 0 100px; }
   .scheduleGrid { grid-template-columns: 1fr; gap: 18px; }
   .eventCard { border-radius: 23px; }
@@ -456,7 +456,7 @@
   .entranceMessage { max-width: 330px; margin-block: 17px; font-size: 15.5px; line-height: 1.38; }
   .entranceMessage strong { margin-bottom: 3px; font-size: 17px; }
   .musicControl { right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); }
-  .entranceDate { font-size: 7px; letter-spacing: 0.16em; }
+  .entranceDate { font-size: 12px; letter-spacing: 0.1em; }
   .primaryButton, .outlineButton, .ghostButton { width: 100%; padding-inline: 18px; }
   .heroFrame { inset: 10px; }
   .heroContent { width: calc(100% - 30px); }
