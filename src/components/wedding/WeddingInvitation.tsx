@@ -447,7 +447,11 @@ export function WeddingInvitation({ ctaHref, ctaLabel, event, isAdmin, isLoggedI
         <small>{details.date} · {details.fullLocation}</small>
         <blockquote>“Y sobre todas estas cosas vestíos de amor.” <cite>Colosenses 3:14</cite></blockquote>
         <p className={styles.siteCredit}>
-          Hecho por Andrés Ardila <span>·</span> Ingeniero de Sistemas <span>·</span> <a href="tel:+573124354040" aria-label="Contactar a Andrés Ardila al 312 435 4040">312 435 4040</a>
+          <a
+            href="https://wa.me/573124354040?text=Hola%20Andr%C3%A9s%2C%20quiero%20crear%20una%20invitaci%C3%B3n"
+            target="_blank"
+            rel="noreferrer"
+          >Crea tu invitación</a>
         </p>
       </footer>
 

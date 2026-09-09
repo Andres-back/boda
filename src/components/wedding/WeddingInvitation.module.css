@@ -322,8 +322,7 @@
 .footer > small { display: block; margin-top: 7px; font-size: 8px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
 .footer blockquote { margin: 35px auto 0; color: rgba(255, 255, 255, 0.56); font: italic 300 16px var(--serif); }
 .footer cite { margin-left: 5px; font-size: 9px; font-style: normal; letter-spacing: 0.12em; text-transform: uppercase; }
-.footer .siteCredit { margin: 34px auto 0; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.12); color: rgba(255, 255, 255, 0.45); font: 500 10px/1.7 var(--sans); letter-spacing: 0.09em; text-transform: uppercase; }
-.siteCredit span { margin-inline: 5px; color: rgba(255, 255, 255, 0.25); }
+.footer .siteCredit { margin: 38px auto 0; color: rgba(255, 255, 255, 0.3); font: 500 9px/1.5 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; }
 .siteCredit a { color: inherit; text-decoration: none; transition: color 0.25s ease; }
 .siteCredit a:hover, .siteCredit a:focus-visible { color: var(--gold-pale); }
 
