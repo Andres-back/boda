@@ -446,6 +446,9 @@ export function WeddingInvitation({ ctaHref, ctaLabel, event, isAdmin, isLoggedI
         <p>Alejandro Valencia & Ana Usma</p>
         <small>{details.date} · {details.fullLocation}</small>
         <blockquote>“Y sobre todas estas cosas vestíos de amor.” <cite>Colosenses 3:14</cite></blockquote>
+        <p className={styles.siteCredit}>
+          Hecho por Andrés Ardila <span>·</span> Ingeniero de Sistemas <span>·</span> <a href="tel:+573124354040" aria-label="Contactar a Andrés Ardila al 312 435 4040">312 435 4040</a>
+        </p>
       </footer>
 
       {lightbox !== null && (
