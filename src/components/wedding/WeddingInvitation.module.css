@@ -267,8 +267,8 @@
 .eventBody h3 { margin: 10px 0 12px; font: 400 40px/1 var(--serif); }
 .eventBody > p:not(.eyebrow) { max-width: 460px; margin: 0; color: var(--muted); font-size: 14px; }
 .eventMeta { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
-.eventMeta span { display: inline-flex; align-items: center; gap: 7px; color: var(--mauve); font-size: 9px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; }
-.eventMeta svg { width: 14px; height: 14px; }
+.eventMeta span { display: inline-flex; align-items: center; gap: 8px; color: var(--mauve); font-size: clamp(12px, 0.9vw, 14px); font-weight: 700; line-height: 1.5; letter-spacing: 0.1em; text-transform: uppercase; }
+.eventMeta svg { flex: 0 0 auto; width: 17px; height: 17px; }
 .schedule .ghostButton { display: flex; width: fit-content; margin: 36px auto 0; }
 
 .story { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); min-height: 820px; background: var(--paper); }
@@ -421,6 +421,9 @@
   .eventBody { padding: 29px 25px 31px; }
   .eventBody h3 { font-size: 38px; }
   .eventNumber { right: 22px; top: 22px; font-size: 52px; }
+  .eventMeta { gap: 12px 18px; margin-top: 24px; padding-top: 20px; }
+  .eventMeta span { font-size: 13px; line-height: 1.55; letter-spacing: 0.075em; }
+  .eventMeta svg { width: 18px; height: 18px; }
   .storyImage { min-height: 65svh; }
   .storyCopy { padding-block: 75px 82px; }
   .storyCopy > p:not(.eyebrow) { font-size: 15px; }
